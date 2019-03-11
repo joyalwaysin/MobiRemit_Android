@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">MobiRemit</string>
+    <string name="txn_history">Transaction History</string>
+    <string name="txn_history_desc">Access your transaction history for the last six months.</string>
+    <string name="track_transfer_desc">Search details of your transcation</string>
+    <string name="copyright">Copyright\u00a9 Distinct Infotech Solutions</string>
+
+    <string name="txn_refno_hint"><font size="14">Transaction Reference Number</font></string>
+    <string name="ccd_hint"><font size="14">Customer Code</font></string>
+    <string name="mobile_hint"><font size="14">Mobile Number</font></string>
+    <string name="id_prompt"><font size="14">Choose ID Type</font></string>
+    <string name="idno_hint"><font size="14">ID Number</font></string>
+    <string name="username_hint"><font size="14">Customer Code</font></string>
+    <string name="password_hint"><font size="14">Password</font></string>
+    <string name="old_pass"><font size="14">Old Password</font></string>
+    <string name="new_pass"><font size="14">New Password</font></string>
+    <string name="old_pin"><font size="14">Old PIN</font></string>
+    <string name="new_pin"><font size="14">New PIN</font></string>
+    <string name="fname"><font size="14">First Name</font></string>
+    <string name="lname"><font size="14">Last Name</font></string>
+    <string name="address1"><font size="14">Address1</font></string>
+    <string name="address2"><font size="14">Address2</font></string>
+    <string name="pincode"><font size="14">Pincode</font></string>
+    <string name="email"><font size="14">Email</font></string>
+    <string name="nationality"><font size="14">Nationality</font></string>
+    <string name="prof_pic"><font size="14">Profile Image</font></string>
+    <string name="id_pic"><font size="14">ID Image</font></string>
+    <string name="id_expiry"><font size="14">ID Expiry Date</font></string>
+    <string name="id_issue"><font size="14">ID Issue Date</font></string>
+    <string name="accno"><font size="14">Account Number</font></string>
+    <string name="bank_code"><font size="14">Enter Code</font></string>
+
+    <string name="label_registerd"><font size="14">Already Registered?</font></string>
+    <string name="label_not_registerd"><font size="14">Not Registered Yet?</font></string>
+    <string name="login"><font size="14">Login</font></string>
+    <string name="create_account"><font size="14">Create an Account</font></string>
+    <string name="add_beneficiary"><font size="14">Add Beneficiary</font></string>
+    <string name="amount"><font size="14">Amount</font></string>
+    <string name="payable_amount"><font size="14">Amount Payable</font></string>
+    <string name="mode_counter">Payment over the Counter</string>
+    <string name="mode_cc">Debit Card/Credit Card</string>
+    <string name="mode_account">Account Transfer</string>
+    <string name="enter_code">Enter Bank Code</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="submit">Submit</string>
+    <string name="mode_existing"><font size="15"><b>Existing Customer</b></font>\n<font size="13">If you already have an account with <b>Arabian Exchange</b>, please choose this option.</font></string>
+    <string name="mode_new"><font size="15"><b>New Customer</b></font>\n<font size="13">If you are a new customer, request your account using this option.  All requests are subject to Authorisation.</font></string>
+    <string name="cc">Customer Code : &amp;nbsp</string>
+    <string name="new_line">\n\n</string>
+
+    <string name="error_cust_code">Enter valid Customer Code</string>
+    <string name="error_password">Enter valid Password</string>
+    <string name="error_refno">Enter valid Reference Number</string>
+    <string name="error_mobile">Enter valid Mobile Number</string>
+    <string name="error_email">Enter valid Email Address</string>
+    <string name="error_idtype">Choose an ID Type</string>
+    <string name="error_codetype">Choose Choose Type</string>
+    <string name="error_nationality">Choose Nationality</string>
+    <string name="error_idno">Enter valid ID Number</string>
+    <string name="error_pin">Enter valid PIN</string>
+    <string name="error_transfer_amt">Enter valid Transfer Amount</string>
+    <string name="error_receiver_amt">Enter valid Receiver Amount</string>
+    <string name="error_currency">Enter valid Currency</string>
+    <string name="error_transfer_fee">Invalid Transfer Fees</string>
+    <string name="error_transfer_rate">Invalid Transfer Rate</string>
+    <string name="error_total_amount">Invalid Total Amount</string>
+    <string name="error_txn_date">Enter Valid Transaction Date</string>
+    <string name="error_source">Choose Valid Souce of Money</string>
+    <string name="error_purpose">Choose Valid Purpose of Transaction</string>
+    <string name="error_fname">Enter valid First Name</string>
+    <string name="error_lname">Enter valid Last Name</string>
+    <string name="error_addr1">Enter valid Address1</string>
+    <string name="error_addr2">Enter valid Address2</string>
+    <string name="error_pincode">Enter valid Post Box Number</string>
+    <string name="error_expiry">Enter valid ID Expiry Date</string>
+    <string name="error_accno">Enter valid Account Number</string>
+
+    <string-array name="idtype_array">
+        <item>Passport</item>
+        <item>Election ID</item>
+        <item>Driving License</item>
+        <item>Adhar</item>
+        <item>PAN Card</item>
+    </string-array>
+
+    <string name="register_succes">Registration Successful</string>
+    <string name="success">Success</string>
+    <string name="login_succes">Login Successful</string>
+    <string name="change_pin_succes">PIN Changed Successfully</string>
+    <string name="change_pass_succes">Password Changed Successfully</string>
+    <string name="register_waiting">Waiting for Approval</string>
+    <string name="oops">Oops..</string>
+    <string name="wrong">Something went wrong!</string>
+    <string name="choice">Please make a choice and continue.</string>
+    <string name="validation">Validation Error!</string>
+    <string name="receipt">Receipt Saved to Gallery.</string>
+    <string name="session_expired">Session Expired!</string>
+    <string name="invalid_pin">Invalid PIN!</string>
+    <string name="register_succes_mesg">Your Registration is subject to the provider.  You will receive an SMS on approval.</string>
+    <string name="benef_register_succes_mesg">Beneficiary Registration is subject to the provider.  You will receive an SMS on approval.</string>
+    <string name="change_passpin_mesg">Please change Password and PIN that you have received via SMS before entering the application.</string>
+    <string name="change_pin_mesg">You should probably change Your PIN now; Changing PIN once in a month is recommended.  Keep your transaction PIN safe.</string>
+    <string name="change_pass_mesg">You should probably change Your Password now; Changing Passwrod once in a month is recommended.  Keep your Password safe.</string>
+    <string name="txn_details">Transaction details for the requested reference number.  Feel free to contact your branch for clarifications if any.</string>
+    <string name="cancel_remittance">You can send request to Cancel Remitance.  All requests are subject to Authorisation.</string>
+    <string name="calc_desc">Please use the converter below to know the latest exchange rates between currencies of your choice.</string>
+    <string name="existing_desc">Use the form below to send request to create an account. You will get Password and PIN as message to the corresponding mobile number after authorisation.</string>
+    <string name="benef_desc"> Use the form below to send request to add Beneficiary. You will get Password and PIN as message to the corresponding mobile number after authorisation.</string>
+
+    <string name="pay_mode">Payment Mode</string>
+    <string name="pay_bank">Payable Bank</string>
+    <string name="transfer_fee">Transfer Fees</string>
+    <string name="transfer_rate">Transfer Rate</string>
+    <string name="pay_mode_desc">Please choose a payment method you wish to pay with</string>
+    <string name="choose_beneficiary">Choose Beneficiary</string>
+    <string name="choose_bank">Choose Bank</string>
+    <string name="acno">Account Number</string>
+    <string name="txn_date">Date of Transaction</string>
+    <string name="bank_ref_no">Bank Reference Number</string>
+    <string name="purpose">Select Purpose of Transaction</string>
+    <string name="source">Select Source of Money</string>
+    <string name="proceed_pay">Proceed to Pay</string>
+    <string name="next">Proceed</string>
+    <string name="confirm_detials">Please confirm the details before proceed to pay</string>
+    <string name="pin">Enter the PIN number to continue</string>
+    <string name="beneficiary">Beneficiary</string>
+    <string name="customer">Customer</string>
+    <string name="transfer_amount">Transfer Amount</string>
+    <string name="receiver_amount">Receiver Amount</string>
+    <string name="t_refno">Reference No</string>
+    <string name="c_refno">Client Reference No</string>
+    <string name="token_no">Token Number</string>
+    <string name="txn_success">Transaction Successful</string>
+    <string name="fut_ref">Note down the details for future reference.</string>
+    <string name="txn_another">Make another Transaction?</string>
+    <string name="back">Back</string>
+    <string name="refno">Reference Number</string>
+    <string name="status">Status</string>
+    <string name="country">Country</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="amount1">Amount</string>
+    <string name="currency">Currency</string>
+    <string name="enter_bank">Bank</string>
+    <string name="enter_branch">Branch</string>
+    <string name="choose_currency">Choose Currency</string>
+    <string name="choose_service">Choose Service Mode</string>
+    <string name="choose_bank_code">Code Type</string>
+    <string name="choose_branch">Choose Branch</string>
+    <string name="choose_country_first">Please Choose Country first</string>
+    <string name="choose_bank_first">Please Choose Bank first</string>
+    <string name="empty_field">Field cannot be empty</string>
+</resources>

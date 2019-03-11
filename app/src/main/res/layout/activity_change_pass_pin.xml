@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#FFFFFF"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        tools:context=".activities.ChangePassPinActivity">
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".11"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lay6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".4"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/landing_client_logo"
+                            android:layout_gravity="bottom" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/lay5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="right"
+                        android:layout_weight="1">
+                        <ImageView
+                            android:layout_width="155dp"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/mobi_remit_logo"
+                            android:layout_gravity="bottom" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lay13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight=".3"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/change_passpin_mesg"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:layout_marginBottom="20dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+
+                        android:src="@drawable/changepass_header" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight=".77"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText android:id="@+id/input_old_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="@string/old_pass"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:text="ABC123"
+                            android:maxLength="8"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText android:id="@+id/input_new_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="@string/new_pass"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="8"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText android:id="@+id/input_old_pin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberPassword"
+                            android:hint="@string/old_pin"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:text="1234"
+                            android:maxLength="4"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:passwordToggleEnabled="true"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText
+                            android:id="@+id/input_new_pin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberPassword"
+                            android:hint="@string/new_pin"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="4"/>
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight=".18"
+                android:orientation="vertical"
+                android:gravity="center|center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_Submit"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_style"
+                    android:text="@string/create_account"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,1059 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/testCoord"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#FFFFFF"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true"
+        tools:context=".activities.RegisterActivity">
+
+        <LinearLayout
+            android:id="@+id/RegisterLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lay13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="20dp"
+
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/benef_desc"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight=".75"
+                    android:orientation="vertical"
+                    android:layout_marginTop="1dp">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <EditText
+                            android:id="@+id/input_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:hint="@string/fname"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="75"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <EditText
+                            android:id="@+id/input_lname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:hint="@string/lname"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="75"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp">
+
+                        <EditText
+                            android:id="@+id/input_address1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapSentences"
+                            android:hint="@string/address1"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="250"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <EditText
+                            android:id="@+id/input_address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapSentences"
+                            android:hint="@string/address2"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="250"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <EditText
+                            android:id="@+id/input_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/mobile_hint"
+                            android:textSize="16sp"
+                            android:background="@drawable/edit_text"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:maxLength="15"/>
+                    </android.support.design.widget.TextInputLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/CountryView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="top|left">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/CountryLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <EditText
+                                android:id="@+id/input_country"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:hint="@string/choose_country"
+                                android:textSize="16sp"
+                                android:background="@drawable/edit_text"
+                                android:paddingRight="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.widget.ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/CountryLay"
+                            android:layout_alignBottom="@+id/CountryLay"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="10dp"
+                            android:clickable="false"
+                            android:focusable="false"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/CurrencyView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="top|left">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/CurrencyLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <EditText
+                                android:id="@+id/input_currency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:hint="@string/choose_currency"
+                                android:textSize="16sp"
+                                android:background="@drawable/edit_text"
+                                android:paddingRight="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.widget.ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/CurrencyLay"
+                            android:layout_alignBottom="@+id/CurrencyLay"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="10dp"
+                            android:clickable="false"
+                            android:focusable="false"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/ServiceView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="top|left">
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/ServiceLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+                            <EditText
+                                android:id="@+id/input_service"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:hint="@string/choose_service"
+                                android:textSize="16sp"
+                                android:background="@drawable/edit_text"
+                                android:paddingRight="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.widget.ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/ServiceLay"
+                            android:layout_alignBottom="@+id/ServiceLay"
+                            android:layout_marginTop="0dp"
+                            android:src="@drawable/ic_down_arrow"
+                            android:paddingRight="25dp"
+                            android:paddingBottom="10dp"
+                            android:clickable="false"
+                            android:focusable="false"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/SectionID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:id="@+id/IDView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="top|left">
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/test"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <EditText
+                                    android:id="@+id/input_IDType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:inputType="text"
+                                    android:hint="@string/id_prompt"
+                                    android:textSize="16sp"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:background="@drawable/edit_text"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginRight="25dp"/>
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.widget.ImageView
+                                android:id="@+id/tvInvisibleError"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignRight="@+id/test"
+                                android:layout_alignBottom="@+id/test"
+                                android:layout_marginTop="0dp"
+                                android:src="@drawable/ic_down_arrow"
+                                android:paddingRight="25dp"
+                                android:paddingBottom="10dp"
+                                android:clickable="false"
+                                android:focusable="false"/>
+                        </RelativeLayout>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+                            <EditText
+                                android:id="@+id/input_idno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:hint="@string/idno_hint"
+                                android:textSize="16sp"
+                                android:background="@drawable/edit_text"
+                                android:imeOptions="actionDone"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:maxLength="25"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/SectionAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <EditText
+                                android:id="@+id/input_accountno"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textCapCharacters"
+                                android:hint="@string/accno"
+                                android:textSize="16sp"
+                                android:background="@drawable/edit_text"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:maxLength="50"/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <RadioGroup
+                                android:id="@+id/radioBankMethod"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <View
+                                    android:layout_width="20dp"
+                                    android:layout_height="match_parent"></View>
+                                <RadioButton
+                                    android:id="@+id/enter_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/enter_code"
+                                    android:textColor="@color/colorGrey"
+                                    android:theme="@style/MyRadioButton"
+                                    android:checked="true"
+                                    android:layout_weight="1"/>
+                                <View
+                                    android:layout_width="10dp"
+                                    android:layout_height="match_parent"></View>
+                                <RadioButton
+                                    android:id="@+id/enter_location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/enter_location"
+                                    android:textColor="@color/colorGrey"
+                                    android:theme="@style/MyRadioButton"
+                                    android:layout_weight="1"/>
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/SectionCode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <RelativeLayout
+                                        android:id="@+id/BankCodeView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="true"
+                                        android:background="?android:attr/selectableItemBackground"
+                                        android:gravity="top|left">
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/BankCodeLay"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp">
+
+                                            <EditText
+                                                android:id="@+id/input_bank_code_type"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:inputType="text"
+                                                android:hint="@string/choose_bank_code"
+                                                android:textSize="16sp"
+                                                android:paddingRight="25dp"
+                                                android:background="@drawable/edit_text"
+                                                android:layout_marginLeft="25dp"
+                                                android:layout_marginRight="5dp"/>
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <android.widget.ImageView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignRight="@+id/BankCodeLay"
+                                            android:layout_alignBottom="@+id/BankCodeLay"
+                                            android:layout_marginTop="0dp"
+                                            android:src="@drawable/ic_down_arrow"
+                                            android:paddingBottom="10dp"
+                                            android:clickable="false"
+                                            android:focusable="false"/>
+                                    </RelativeLayout>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="25dp"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/EnterCodeView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="true"
+                                        android:orientation="horizontal"
+                                        android:background="?android:attr/selectableItemBackground"
+                                        android:gravity="top|left">
+
+                                        <android.support.design.widget.TextInputLayout
+                                            android:id="@+id/EnterCodeLay"
+                                            android:layout_width="0dp"
+                                            android:layout_height="wrap_content"
+                                            android:paddingRight="5dp"
+                                            android:layout_weight="2.5"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp">
+
+                                            <EditText
+                                                android:id="@+id/input_bank_code"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:inputType="textCapCharacters"
+                                                android:hint="@string/bank_code"
+                                                android:textSize="16sp"
+                                                android:text="UBIN0550515"
+                                                android:imeOptions="actionSearch"
+                                                android:background="@drawable/edit_text"
+                                                android:layout_marginLeft="5dp"
+                                                android:maxLength="20"/>
+                                        </android.support.design.widget.TextInputLayout>
+
+                                        <android.widget.ImageView
+                                            android:id="@+id/BankSearch"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:src="@drawable/ic_search"
+                                            android:tint="@color/colorGreyLight"
+                                            android:background="@drawable/rounded_corner"
+                                            android:layout_gravity="bottom"
+                                            android:padding="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:clickable="true" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:gravity="top|left">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/BankLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:focusable="false"
+                                    android:clickable="false"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp">
+                                    <EditText
+                                        android:id="@+id/input_bank"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="textCapCharacters"
+                                        android:hint="@string/enter_bank"
+                                        android:textSize="16sp"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:background="@drawable/edit_text"
+                                        android:maxLength="50"/>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <ProgressBar
+                                    android:id="@+id/BankProgress"
+                                    style="?android:attr/progressBarStyle"
+                                    android:layout_height="30dp"
+                                    android:layout_width="30dp"
+                                    android:visibility="gone"
+                                    android:layout_alignRight="@+id/BankLay"
+                                    android:layout_alignBottom="@+id/BankLay"
+                                    android:layout_centerInParent="true"
+                                    android:indeterminateTintMode="src_atop"
+                                    android:indeterminateTint="@color/colorOrange"
+                                    android:paddingRight="5dp"
+                                    android:paddingBottom="10dp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp"
+                                android:gravity="top|left">
+
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/BranchLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp">
+                                    <EditText
+                                        android:id="@+id/input_branch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="textCapCharacters"
+                                        android:hint="@string/enter_branch"
+                                        android:textSize="16sp"
+                                        android:clickable="false"
+                                        android:focusable="false"
+                                        android:background="@drawable/edit_text"
+                                        android:maxLength="50"/>
+                                </android.support.design.widget.TextInputLayout>
+                                <ProgressBar
+                                    android:id="@+id/BranchProgress"
+                                    style="?android:attr/progressBarStyle"
+                                    android:layout_height="30dp"
+                                    android:layout_width="30dp"
+                                    android:visibility="gone"
+                                    android:layout_alignRight="@+id/BranchLay"
+                                    android:layout_alignBottom="@+id/BranchLay"
+                                    android:layout_centerInParent="true"
+                                    android:indeterminateTintMode="src_atop"
+                                    android:indeterminateTint="@color/colorOrange"
+                                    android:paddingRight="5dp"
+                                    android:paddingBottom="10dp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/SectionLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:id="@+id/ChooseBankView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="top|left">
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/ChooseBankLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp">
+
+                                    <EditText
+                                        android:id="@+id/input_choose_bank"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        android:hint="@string/choose_bank"
+                                        android:textSize="16sp"
+                                        android:background="@drawable/edit_text"
+                                        android:paddingRight="30dp"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginRight="25dp"/>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.widget.ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignRight="@+id/ChooseBankLay"
+                                    android:layout_alignBottom="@+id/ChooseBankLay"
+                                    android:layout_marginTop="0dp"
+                                    android:src="@drawable/ic_down_arrow"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="10dp"
+                                    android:clickable="false"
+                                    android:focusable="false"/>
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/ChooseBranchView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:background="?android:attr/selectableItemBackground"
+                                android:gravity="top|left">
+                                <android.support.design.widget.TextInputLayout
+                                    android:id="@+id/ChooseBranchLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp">
+
+                                    <EditText
+                                        android:id="@+id/input_choose_branch"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:inputType="text"
+                                        android:hint="@string/choose_branch"
+                                        android:textSize="16sp"
+                                        android:background="@drawable/edit_text"
+                                        android:paddingRight="30dp"
+                                        android:layout_marginLeft="25dp"
+                                        android:layout_marginRight="25dp"/>
+                                </android.support.design.widget.TextInputLayout>
+
+                                <android.widget.ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignRight="@+id/ChooseBranchLay"
+                                    android:layout_alignBottom="@+id/ChooseBranchLay"
+                                    android:layout_marginTop="0dp"
+                                    android:src="@drawable/ic_down_arrow"
+                                    android:paddingRight="25dp"
+                                    android:paddingBottom="10dp"
+                                    android:clickable="false"
+                                    android:focusable="false"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+                    <EditText android:id="@+id/txt_idcode_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/txt_country_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/txt_currency_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/txt_bank_codetype_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/input_choose_bank_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/input_choose_branch_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/input_bank_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+                    <EditText android:id="@+id/input_branch_hidden"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:inputType="text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay3"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight=".3"
+                android:paddingTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:gravity="top|center_horizontal">
+
+                <Button
+                    android:id="@+id/btn_Register"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/button_style"
+                    android:text="@string/add_beneficiary"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_country"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/coutrySearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/defaultViewCountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/CountryProgress"
+                style="?android:attr/progressBarStyle"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorOrange" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_mode"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:text="PLEASE MAKE A CHOICE"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_currency"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:text="PLEASE MAKE A CHOICE"/>
+        <TextView
+            android:id="@+id/defaultViewCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/CurrencyProgress"
+                style="?android:attr/progressBarStyle"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorOrange" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCurrency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_idtype"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:text="PLEASE MAKE A CHOICE"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/IdtypeProgress"
+                style="?android:attr/progressBarStyle"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorOrange" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewIdtype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_codetype"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:text="PLEASE MAKE A CHOICE"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewCodetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_choose_bank"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/bankSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/defaultViewBank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/ChooseBankProgress"
+                style="?android:attr/progressBarStyle"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorOrange" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewChooseBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_choose_branch"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+        <android.support.v7.widget.SearchView
+            android:id="@+id/branchSearchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/defaultViewBranch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:id="@+id/ChooseBranchProgress"
+                style="?android:attr/progressBarStyle"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:visibility="visible"
+                android:layout_centerInParent="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/colorOrange" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerViewChooseBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

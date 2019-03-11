@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TransferLayout"
+    android:layout_width="match_parent"
+    android:tag="unique_tag"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/amountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="8dp"
+                    android:text="@string/calc_desc"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_flag_from"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flag_default"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/FromAmountView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="top|left">
+
+                            <EditText
+                                android:id="@+id/input_from_currency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:text="Choose Currency"
+                                android:background="@drawable/edit_text"
+                                android:textSize="15sp"
+                                android:maxLength="15"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:textColor="@color/colorGrey"
+                                android:layout_marginBottom="10dp" />
+
+                            <android.widget.ImageView
+                                android:layout_alignRight="@+id/input_from_currency"
+                                android:layout_alignBottom="@+id/input_from_currency"
+                                android:src="@drawable/ic_down_arrow"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:paddingBottom="7dp"
+                                android:paddingRight="1dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_amount_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/edit_text"
+                            android:hint="0"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey"
+                            android:imeOptions="actionDone"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <android.widget.ImageView
+                        android:id="@+id/CalcImage"
+                        android:src="@drawable/calc"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:visibility="gone"
+                        android:layout_gravity="center"/>
+
+                    <ProgressBar
+                        android:id="@+id/calculatorProgress"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:visibility="visible"
+                        android:layout_centerInParent="true"
+                        android:indeterminateTintMode="src_atop"
+                        android:indeterminateTint="@color/colorOrange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_flag_to"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        android:src="@drawable/flag_default"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_weight="1">
+
+                        <RelativeLayout
+                            android:id="@+id/ToAmountView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:gravity="top|left">
+
+                            <EditText
+                                android:id="@+id/input_to_currency"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="text"
+                                android:text="Choose Currency"
+                                android:background="@drawable/edit_text"
+                                android:textSize="15sp"
+                                android:maxLength="15"
+                                android:clickable="true"
+                                android:focusable="false"
+                                android:textColor="@color/colorGrey"
+                                android:layout_marginBottom="10dp" />
+
+                            <android.widget.ImageView
+                                android:layout_alignRight="@+id/input_to_currency"
+                                android:layout_alignBottom="@+id/input_to_currency"
+                                android:src="@drawable/ic_down_arrow"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:paddingBottom="7dp"
+                                android:paddingRight="1dp"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/txt_amount_to"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/edit_text"
+                            android:hint="0"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorGrey"
+                            android:imeOptions="actionDone"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="end" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <EditText android:id="@+id/txt_hidden_from"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:inputType="text"/>
+                <EditText android:id="@+id/txt_hidden_to"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_from"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@color/colorAccent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:text="PLEASE MAKE A CHOICE"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        android:id="@+id/bottom_sheet_to"
+        android:background="@android:color/white"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/white"
+            android:text="PLEASE MAKE A CHOICE"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

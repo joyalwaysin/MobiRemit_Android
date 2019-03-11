@@ -1,0 +1,312 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical" >
+                <ImageView
+                    android:id="@+id/txcpluss_imageView_refresh"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:contentDescription="icon"
+                    android:gravity="right"
+                    android:src="@drawable/payment_icon" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lay4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:gravity="bottom" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Track Transfer"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="3dp" />
+                    <TextView
+                        android:id="@+id/TextView09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/track_transfer_desc"
+                        android:paddingLeft="3dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:paddingTop="2dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical|top" >
+
+                    <EditText
+                        android:id="@+id/txtRefNumber"
+                        android:layout_width="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/rounded_corner"
+                        android:hint="@string/txn_refno_hint"
+                        android:inputType="number"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="10dp"
+                        android:maxLength="20"
+                        android:singleLine="true"
+                        android:layout_height="40dp">
+                        <requestFocus />
+                    </EditText>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:background="@drawable/gradient_border"
+        android:layout_height="0.5dp"></View>
+
+    <LinearLayout
+        android:id="@+id/lay2"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lay6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="bottom" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txn_history"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="2dp"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical|top" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txn_history_desc" />
+                    <LinearLayout android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="5dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/TextView06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Click " />
+                        <TextView
+                            android:id="@+id/txtClickHere"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/click_text_color"
+                            android:clickable="true"
+                            android:text="here" />
+                        <TextView
+                            android:id="@+id/TextView08"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" to view the history." />
+                        </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical" >
+                <ImageView
+                    android:id="@+id/imageView_txn_history"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:contentDescription="icon"
+                    android:gravity="right"
+                    android:src="@drawable/payment_history" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:background="@drawable/gradient_border"
+        android:layout_height="0.5dp"></View>
+
+    <LinearLayout
+        android:id="@+id/lay3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView_branches"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="icon"
+                    android:gravity="right"
+                    android:clickable="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/branches" />
+
+                <TextView
+                    android:id="@+id/txtBranches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_branches"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Branches"
+                    android:textStyle="normal|bold"
+                    android:padding="5dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView_calculator"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="icon"
+                    android:gravity="right"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/currency_calculator" />
+
+                <TextView
+                    android:id="@+id/txtCalculator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_calculator"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="Currency Calc"
+                    android:textStyle="normal|bold"
+                    android:padding="5dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingTop="5dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView_news"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="icon"
+                    android:gravity="right"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/news_events" />
+
+                <TextView
+                    android:id="@+id/txtNews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView_news"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:text="News &amp; Events"
+                    android:textStyle="normal|bold"
+                    android:padding="5dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
